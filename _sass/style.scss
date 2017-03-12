@@ -1,0 +1,40 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.jumbotron.main {
+  background-image: url('../../img/ahmedabad.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  text-shadow: 0 1px 3px #333;
+}
+
+.heading, .projects {
+  margin-bottom: 32px;
+}
+
+.panel-body {
+  min-height: 180px;
+}
+
+.post {
+  min-height: 300px;
+}
+
+.post-image {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -15px;
+  margin-bottom: 25px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 24px;
+}
