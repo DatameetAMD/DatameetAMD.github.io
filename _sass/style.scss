@@ -2,7 +2,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.jumbotron.main {
+.jumbotron {
   background-image: url('../../img/ahmedabad.jpg');
   background-size: cover;
   background-position: center;
@@ -10,8 +10,12 @@ body {
   text-shadow: 0 1px 3px #333;
 }
 
-.heading, .projects {
+.heading {
   margin-bottom: 32px;
+}
+
+.projects {
+  margin-bottom: 64px;
 }
 
 .panel-body {
