@@ -7,7 +7,7 @@ layout: default
   </div>
   
   <div class="row projects">
-    {% for post in site.posts %}
+    {% for post in site.categories.project | where: "category", "project" %}
 
     <div class="col-md-4">
       <div class="panel panel-info">
@@ -16,13 +16,13 @@ layout: default
           <div class="post-image">
             <img src="./img/{{ post.slug }}.jpg" alt="">
           </div>
-          <h3>{{ post.title | escape }}</h3>
+          <h3 class="text-primary">{{ post.title | escape }}</h3>
 
           <p class="post-meta">{{ post.excerpt }}</p>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><a href="https://github.com/{{ post.repo }}">View on Github</a></li>
-          <li class="list-group-item">Contribute</li>
+          <li class="list-group-item"><i class="icon-social-github"></i> <a href="https://github.com/{{ post.repo }}">View on Github</a></li>
+          <li class="list-group-item"><i class="icon-flag"></i> <a href="https://github.com/{{ post.repo }}/issues">Report a problem</a></li>
         </ul>
       </div>
     </div>
@@ -32,7 +32,7 @@ layout: default
 
 <div class="jumbotron">
   <div class="container">
-    <h2>Contribute</h2>
+    <h2 class="text-primary">Contribute</h2>
     <div class="row">
       <div class="col-md-6">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus mollitia nostrum excepturi, repellendus asperiores. Eligendi deleniti officiis cupiditate quam accusamus consequuntur nulla. Est neque sequi cumque, laboriosam deleniti harum impedit eveniet sunt magnam dolorem corporis. Debitis, quod!</p>
