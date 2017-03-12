@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <div class="jumbotron main">
+        <div class="container">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+        </div>
+      </div>
+
+      <section>
+        {{ content }}
+      </section>
+
+      <footer>
+        <div class="container">
+          {% if site.github.is_project_page %}
+          <p>This project is maintained by <a href="http://datameet.org/chapters/ahmedabad/" target="_blank">DatameetAMD</a></p>
+          {% endif %}
+          <p><small><span class="social social-github"></span>Made with <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> and ♥️ &mdash; Hosted with <a href="https://pages.github.com" target="_blank">Github Pages</a></small></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
