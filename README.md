@@ -1,8 +1,5 @@
-You will find here the source for the openahmedabad.org website. It is powered by [Jekyll](http://jekyllrb.com) for managing pages and [Bootstrap](http://getbootstrap.com) for layout.
+# open-ahmedabad-template
 
-Develop locally
----
+This is openAhmedabad.org website template built in html5, css3 and jquery with little help of javascript.
 
-1. Make sure you have [Ruby](https://www.ruby-lang.org/en/) installed on your system
-2. Also that you have the gems ```bundle``` and ```jekyll``` installed. You can do so using ```gem install jekyll bundler```
-3. Finally, run ```bundle exec jekyll serve --incremental``` to load up the Jekyll server. Navigate to http://localhost:8080 in your browser.
+will be uploaded soon to openahmedabad.org
